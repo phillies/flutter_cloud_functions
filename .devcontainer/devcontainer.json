@@ -1,0 +1,35 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/python",
+    "forwardPorts": [
+        3000
+    ],
+    "features": {
+        "ghcr.io/jarrodcolburn/features/flutter-sdk:0": {
+            "release": "beta"
+        },
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/dhoeric/features/google-cloud-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dart-code.dart-code",
+                "dart-code.flutter",
+                "github.copilot",
+                "eamodio.gitlens"
+            ],
+            "settings": {
+                "editor.inlineSuggest.enabled": true,
+                "editor.formatOnPaste": true,
+                "editor.formatOnSave": true,
+                "dart.lineLength": 119,
+                "dart.openDevTools": "flutter",
+                "[dart]": {
+                    "editor.rulers": [
+                        119
+                    ]
+                }
+            }
+        }
+    }
+}
